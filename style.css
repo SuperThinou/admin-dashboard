@@ -1,0 +1,155 @@
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+/* END CSS RESET */
+
+body {
+  min-height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+nav {
+  grid-area: 1 / 1 / 6 / 2;
+  background-color: #1992d4;
+  color: white;
+}
+header {
+  grid-area: 1 / 2 / 2 / 6;
+}
+main {
+  grid-area: 2 / 2 / 6 / 6;
+}
+
+h1 {
+  padding: 20px;
+}
+h1:hover {
+  cursor: pointer;
+}
+
+h1::before {
+  content: url(icons/dashboard.svg);
+  padding-right: 10px;
+}
+
+menu {
+  list-style-type: none;
+}
+
+li {
+  margin: 10px 0;
+  padding: 0 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  align-self: center;
+}
+
+li:hover {
+  cursor: pointer;
+}
+li::before {
+  padding-right: 10px;
+}
+
+#communities {
+  margin-bottom: 5rem;
+}
+
+#home::before {
+  content: url(icons/home.svg);
+}
+#profile::before {
+  content: url(icons/profile.svg);
+}
+#message::before {
+  content: url(icons/messages.svg);
+}
+#history::before {
+  content: url(icons/history.svg);
+}
+#tasks::before {
+  content: url(icons/tasks.svg);
+}
+#communities::before {
+  content: url(icons/communities.svg);
+}
+#settings::before {
+  content: url(icons/settings.svg);
+}
+#support::before {
+  content: url(icons/support.svg);
+}
+#privacy::before {
+  content: url(icons/privacy.svg);
+}
