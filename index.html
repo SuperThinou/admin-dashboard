@@ -7,23 +7,195 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <nav>
-        <h1>Dashboard</h1>
-        <menu>
-          <li id="home">Home</li>
-          <li id="profile">Profile</li>
-          <li id="message">Message</li>
-          <li id="history">History</li>
-          <li id="tasks">Tasks</li>
-          <li id="communities">Communities</li>
-          <li id="settings">Settings</li>
-          <li id="support">Support</li>
-          <li id="privacy">Privacy</li>
-        </menu>
-      </nav>
-      <header></header>
-      <main></main>
-    </div>
+    <section class="container">
+      <aside>
+        <h1>
+          <a href="#" id="dashboard"
+            ><img
+              src="icons/dashboard.svg"
+              alt=""
+              id="dashboard-icon"
+            />Dashboard</a
+          >
+        </h1>
+
+        <nav>
+          <a href="#" id="home"
+            ><img src="icons/home.svg" alt="" /><span>Home</span></a
+          >
+          <a href="#" id="profile"
+            ><img src="icons/profile.svg" alt="" /><span>Profile</span></a
+          >
+          <a href="#" id="message"
+            ><img src="icons/messages.svg" alt="" /><span>Messages</span></a
+          >
+          <a href="#" id="history"
+            ><img src="icons/history.svg" alt="" /><span>History</span></a
+          >
+          <a href="#" id="tasks"
+            ><img src="icons/tasks.svg" alt="" /><span>Tasks</span></a
+          >
+          <a href="#" id="communities"
+            ><img src="icons/communities.svg" alt="" /><span
+              >Communities</span
+            ></a
+          >
+          <a href="#" id="settings"
+            ><img src="icons/settings.svg" alt="" /><span>Settings</span></a
+          >
+          <a href="#" id="support"
+            ><img src="icons/support.svg" alt="" /><span>Support</span></a
+          >
+          <a href="#" id="privacy"
+            ><img src="icons/privacy.svg" alt="" /><span>Privacy</span></a
+          >
+        </nav>
+      </aside>
+
+      <header>
+        <div class="search-bar-container">
+          <div class="search-bar">
+            <img src="icons/search.svg" alt="" class="icon" />
+            <input type="search" id="searchBar" />
+          </div>
+          <div class="profile-container">
+            <img src="icons/notifications.svg" alt="" class="icon" />
+            <img
+              src="icons/profile-picture.jpg"
+              alt=""
+              class="profile-picture"
+            />
+            <p class="profile-name">NBXOFF</p>
+          </div>
+        </div>
+
+        <div class="profile-menu-container">
+          <div class="profile-info-container">
+            <img
+              src="icons/profile-picture.jpg"
+              alt=""
+              class="profile-picture"
+            />
+            <h2><span>Hi there,</span><br />NBXOFF (@nbx)</h2>
+          </div>
+          <div class="profile-btn-container">
+            <button disabled>New</button>
+            <button disabled>Upload</button>
+            <button disabled>Share</button>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="project-container">
+          <h3>My projects</h3>
+          <div class="project-box-container">
+            <div class="project box">
+              <h3>My project</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti itaque voluptatum suscipit cumque dolor. Omnis rerum
+                vitae sequi aut quod!
+              </p>
+            </div>
+            <div class="project box">
+              <h3>My project</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti itaque voluptatum suscipit cumque dolor. Omnis rerum
+                vitae sequi aut quod!
+              </p>
+            </div>
+            <div class="project box">
+              <h3>My project</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti itaque voluptatum suscipit cumque dolor. Omnis rerum
+                vitae sequi aut quod!
+              </p>
+            </div>
+            <div class="project box">
+              <h3>My project</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti itaque voluptatum suscipit cumque dolor. Omnis rerum
+                vitae sequi aut quod!
+              </p>
+            </div>
+            <div class="project box">
+              <h3>My project</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti itaque voluptatum suscipit cumque dolor. Omnis rerum
+                vitae sequi aut quod!
+              </p>
+            </div>
+            <div class="project box">
+              <h3>My project</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti itaque voluptatum suscipit cumque dolor. Omnis rerum
+                vitae sequi aut quod!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="annoucement-trending-container">
+          <h3>Annoucements</h3>
+          <div class="annoucement-container box">
+            <h4>Site Maintenance</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur voluptatibus in ratione adipisci. Accusantium aut
+              doloremque quo debitis asperiores dolore?
+            </p>
+            <hr />
+
+            <h4>Community Share Day</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur voluptatibus in ratione adipisci. Accusantium aut
+              doloremque quo debitis asperiores dolore?
+            </p>
+            <hr />
+
+            <h4>Updated Privacy Policy</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur voluptatibus in ratione adipisci. Accusantium aut
+              doloremque quo debitis asperiores dolore?
+            </p>
+          </div>
+          <div class="trending-profile-container">
+            <h3>Trendings</h3>
+            <div class="box">
+              <div class="trending-profile">
+                <img
+                  src="icons/profile-picture.jpg"
+                  alt=""
+                  class="profile-picture"
+                />
+                <p><span class="tag">@kalou</span><br />Web developer</p>
+              </div>
+              <div class="trending-profile">
+                <img
+                  src="icons/profile-picture.jpg"
+                  alt=""
+                  class="profile-picture"
+                />
+                <p><span class="tag">@nbx</span><br />Music producer</p>
+              </div>
+              <div class="trending-profile">
+                <img
+                  src="icons/profile-picture.jpg"
+                  alt=""
+                  class="profile-picture"
+                />
+                <p><span class="tag">@coinks</span><br />Software Engineer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
   </body>
 </html>
