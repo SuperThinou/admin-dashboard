@@ -129,8 +129,6 @@ nav img {
 /* Header */
 
 header {
-  display: grid;
-  grid-template-rows: 2;
   z-index: 999;
   box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px,
     rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
@@ -310,8 +308,59 @@ footer {
 }
 
 /* Media Queries */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1100px) {
+  h1 {
+    display: none;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-container .profile-picture,
+  .profile-container p {
+    display: none;
+  }
+
+  .search-bar-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
   nav span {
     display: none;
+  }
+
+  .profile-btn-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h2 {
+    display: none;
+  }
+
+  .icon {
+    min-width: 30px;
+  }
+
+  .project-box-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project {
+    height: 200px;
   }
 }
